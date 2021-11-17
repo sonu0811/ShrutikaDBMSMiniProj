@@ -1,0 +1,130 @@
+html {
+  background: url("https://images.pexels.com/photos/1702495/pexels-photo-1702495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") center no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  text-align: center;
+  font-family: Futura, sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.77);
+}
+
+.wrapper {
+  padding: 1rem;
+  max-width: 75%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  font-weight: 200;
+}
+
+.items-list {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+}
+
+.items-list li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  font-weight: 100;
+  display: flex;
+}
+
+.items-list label {
+  flex: 1;
+  cursor: pointer;
+}
+
+.items-list input {
+  display: none;
+}
+
+.items-list input + label:before {
+  content: "⬜️";
+  margin-right: 10px;
+}
+
+.items-list input:checked + label:before {
+  content: "🪴";
+}
+
+.add-items {
+  margin-top: 20px;
+}
+
+button,
+.add-items input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin: 1rem;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+  color: ghostwhite;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin: .5rem;
+  position: inherit;
+  padding: .5rem;
+  text-justify:auto;
+  text-align: center;
+}
+
+.footWords {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footWords > p {
+  padding: 0 1rem 0 1rem;
+}
+
+a {
+  color: deeppink;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: seagreen;
+  border-radius: 3rem;
+}
+
+p > a,
+p > a:visited {
+  color: inherit;
+}
+
+sub > a {
+  color: inherit;
+}
